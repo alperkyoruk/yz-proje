@@ -4,9 +4,9 @@
 #include "data_types.h"
 
 // ========  YOUR COMPULSORY (BUT SPECIFIC TO THE PROBLEM) COMMANDS ============
-#define HASH_TABLE_BASED_SIZE 25
+#define HASH_TABLE_BASED_SIZE 64
 #define HASH_TABLE_INCREASING_RATE 70
-#define MAX_KEY_SIZE 3
+#define MAX_KEY_SIZE 18
 
 // ================== YOU DO NOT NEED TO CHANGE THIS PART ======================
 typedef struct {
@@ -31,3 +31,4 @@ void Show_Hash_Table(Hash_Table *ht);
 
 
 #endif
+
