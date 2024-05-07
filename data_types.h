@@ -5,10 +5,14 @@
 
 enum CITIES 
 {
-	Arad,    Bucharest, Craiova,  Drobeta, Eforie,
-	Fagaras, Giurgiu,   Hirsova,  Iasi,    Lugoj,
-	Mehadia, Neamt,     Oradea,   Pitesti, Rimnicu_Vilcea,
-	Sibiu,   Timisoara, Urziceni, Vaslui,  Zerind
+	A1, B1, C1, D1, E1, F1, G1, H1,
+	A2, B2, C2, D2, E2, F2, G2, H2,
+	A3, B3, C3, D3, E3, F3, G3, H3,
+	A4, B4, C4, D4, E4, F4, G4, H4,
+	A5, B5, C5, D5, E5, F5, G5, H5,
+	A6, B6, C6, D6, E6, F6, G6, H6,
+	A7, B7, C7, D7, E7, F7, G7, H7,
+	A8, B8, C8, D8, E8, F8, G8, H8,
 };
 
 
@@ -16,10 +20,14 @@ enum CITIES
 
 enum ACTIONS // All possible actions
 {
-	Go_Arad,    Go_Bucharest, Go_Craiova,  Go_Drobeta, Go_Eforie,
-	Go_Fagaras, Go_Giurgiu,   Go_Hirsova,  Go_Iasi,    Go_Lugoj,
-	Go_Mehadia, Go_Neamt,     Go_Oradea,   Go_Pitesti, Go_Rimnicu_Vilcea,
-	Go_Sibiu,   Go_Timisoara, Go_Urziceni, Go_Vaslui,  Go_Zerind
+	Go_A1, Go_A2, Go_A3, Go_A4, Go_A5, Go_A6, Go_A7, Go_A8,
+	Go_B1, Go_B2, Go_B3, Go_B4, Go_B5, Go_B6, Go_B7, Go_B8,
+	Go_C1, Go_C2, Go_C3, Go_C4, Go_C5, Go_C6, Go_C7, Go_C8,
+	Go_D1, Go_D2, Go_D3, Go_D4, Go_D5, Go_D6, Go_D7, Go_D8,
+	Go_E1, Go_E2, Go_E3, Go_E4, Go_E5, Go_E6, Go_E7, Go_E8,
+	Go_F1, Go_F2, Go_F3, Go_F4, Go_F5, Go_F6, Go_F7, Go_F8,
+	Go_G1, Go_G2, Go_G3, Go_G4, Go_G5, Go_G6, Go_G7, Go_G8,
+	Go_H1, Go_H2, Go_H3, Go_H4, Go_H5, Go_H6, Go_H7, Go_H8
 };
 
 typedef struct State  
