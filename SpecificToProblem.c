@@ -18,7 +18,7 @@ State* Create_State()
     if(state==NULL)
     	Warning_Memory_Allocation(); 
    
-   	for(state->city=Arad; state->city<=Zerind; state->city++){        
+   	for(state->city=A1; state->city<=H8; state->city++){        
     	printf("%d --> ", state->city);
         Print_State(state);
         printf("\n");
