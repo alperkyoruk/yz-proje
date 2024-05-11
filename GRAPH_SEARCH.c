@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include "GRAPH_SEARCH.h"
 #include "data_types.h"
+#include "SpecificToProblem.c"
+#include "Standart_Search.c"
+#include "HashTable.c"
 
 int main()
 {

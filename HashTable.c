@@ -12,30 +12,18 @@
 // =========  YOUR COMPULSORY (BUT SPECIFIC TO THE PROBLEM) FUNCTIONS =======
 
 //___________________ Create unique char key for each state______________________
-#define MAX_KEY_SIZE 18 // Assuming maximum 8 city digits + 8 delimiters + '\0'
 
-// A state representing the current position and the remaining cities to visit
-typedef struct {
-    int current_city;
-    int remaining_cities[64]; // Assuming an 8x8 grid with 64 cities
-    // Other state variables if needed
-} State;
 
 // Generate a unique key for each state based on current city and remaining cities
 void Generate_HashTable_Key(const State *const state, unsigned char* key) 
 {
-    int i;
     // Include current city in the key
-    key[0] = state->current_city + '0';
+    key[0] = state->city + '0'; // Assuming city is represented as an integer
     key[1] = '_'; // Use '_' as a delimiter
     int index = 2;
 
-    // Include remaining cities in the key
-    for (i = 0; i < 64; i++) {
-        key[index++] = state->remaining_cities[i] + '0';
-        key[index++] = ','; // Use ',' as a delimiter between cities
-    }
-    key[index] = '\0'; // Null-terminate the key
+    // Null-terminate the key
+    key[index] = '\0'; 
 
     if (index > MAX_KEY_SIZE) {
         printf("ERROR: MAX_KEY_SIZE is exceeded in Generate_HashTable_Key. \n");
