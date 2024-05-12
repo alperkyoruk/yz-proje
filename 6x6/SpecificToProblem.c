@@ -13,13 +13,13 @@
 
 
 //______________________________________________________________________________
-State *Create_State()
+State* Create_State()
 {
-    State *state = (State *)malloc(sizeof(State));
+    State* state = (State*)malloc(sizeof(State));
     if (state == NULL)
         Warning_Memory_Allocation();
 
-    for (state->city = A1; state->city <= H8; state->city++)
+    for (state->city = A1; state->city <= F6; state->city++)
     {
         printf("%d --> ", state->city);
         Print_State(state);
@@ -36,7 +36,7 @@ State *Create_State()
 }
 
 //______________________________________________________________________________
-void Print_State(const State *const state)
+void Print_State(const State* const state)
 {
     switch (state->city)
     {
@@ -58,12 +58,6 @@ void Print_State(const State *const state)
     case F1:
         printf("F1");
         break;
-    case G1:
-        printf("G1");
-        break;
-    case H1:
-        printf("H1");
-        break;
     case A2:
         printf("A2");
         break;
@@ -81,12 +75,6 @@ void Print_State(const State *const state)
         break;
     case F2:
         printf("F2");
-        break;
-    case G2:
-        printf("G2");
-        break;
-    case H2:
-        printf("H2");
         break;
     case A3:
         printf("A3");
@@ -106,12 +94,6 @@ void Print_State(const State *const state)
     case F3:
         printf("F3");
         break;
-    case G3:
-        printf("G3");
-        break;
-    case H3:
-        printf("H3");
-        break;
     case A4:
         printf("A4");
         break;
@@ -129,12 +111,6 @@ void Print_State(const State *const state)
         break;
     case F4:
         printf("F4");
-        break;
-    case G4:
-        printf("G4");
-        break;
-    case H4:
-        printf("H4");
         break;
     case A5:
         printf("A5");
@@ -154,12 +130,6 @@ void Print_State(const State *const state)
     case F5:
         printf("F5");
         break;
-    case G5:
-        printf("G5");
-        break;
-    case H5:
-        printf("H5");
-        break;
     case A6:
         printf("A6");
         break;
@@ -177,60 +147,6 @@ void Print_State(const State *const state)
         break;
     case F6:
         printf("F6");
-        break;
-    case G6:
-        printf("G6");
-        break;
-    case H6:
-        printf("H6");
-        break;
-    case A7:
-        printf("A7");
-        break;
-    case B7:
-        printf("B7");
-        break;
-    case C7:
-        printf("C7");
-        break;
-    case D7:
-        printf("D7");
-        break;
-    case E7:
-        printf("E7");
-        break;
-    case F7:
-        printf("F7");
-        break;
-    case G7:
-        printf("G7");
-        break;
-    case H7:
-        printf("H7");
-        break;
-    case A8:
-        printf("A8");
-        break;
-    case B8:
-        printf("B8");
-        break;
-    case C8:
-        printf("C8");
-        break;
-    case D8:
-        printf("D8");
-        break;
-    case E8:
-        printf("E8");
-        break;
-    case F8:
-        printf("F8");
-        break;
-    case G8:
-        printf("G8");
-        break;
-    case H8:
-        printf("H8");
         break;
     }
 }
@@ -258,12 +174,6 @@ void Print_Action(const enum ACTIONS action)
     case Go_F1:
         printf("Go_F1");
         break;
-    case Go_G1:
-        printf("Go_G1");
-        break;
-    case Go_H1:
-        printf("Go_H1");
-        break;
     case Go_A2:
         printf("Go_A2");
         break;
@@ -281,12 +191,6 @@ void Print_Action(const enum ACTIONS action)
         break;
     case Go_F2:
         printf("Go_F2");
-        break;
-    case Go_G2:
-        printf("Go_G2");
-        break;
-    case Go_H2:
-        printf("Go_H2");
         break;
     case Go_A3:
         printf("Go_A3");
@@ -306,12 +210,6 @@ void Print_Action(const enum ACTIONS action)
     case Go_F3:
         printf("Go_F3");
         break;
-    case Go_G3:
-        printf("Go_G3");
-        break;
-    case Go_H3:
-        printf("Go_H3");
-        break;
     case Go_A4:
         printf("Go_A4");
         break;
@@ -329,12 +227,6 @@ void Print_Action(const enum ACTIONS action)
         break;
     case Go_F4:
         printf("Go_F4");
-        break;
-    case Go_G4:
-        printf("Go_G4");
-        break;
-    case Go_H4:
-        printf("Go_H4");
         break;
     case Go_A5:
         printf("Go_A5");
@@ -354,12 +246,6 @@ void Print_Action(const enum ACTIONS action)
     case Go_F5:
         printf("Go_F5");
         break;
-    case Go_G5:
-        printf("Go_G5");
-        break;
-    case Go_H5:
-        printf("Go_H5");
-        break;
     case Go_A6:
         printf("Go_A6");
         break;
@@ -378,63 +264,8 @@ void Print_Action(const enum ACTIONS action)
     case Go_F6:
         printf("Go_F6");
         break;
-    case Go_G6:
-        printf("Go_G6");
-        break;
-    case Go_H6:
-        printf("Go_H6");
-        break;
-    case Go_A7:
-        printf("Go_A7");
-        break;
-    case Go_B7:
-        printf("Go_B7");
-        break;
-    case Go_C7:
-        printf("Go_C7");
-        break;
-    case Go_D7:
-        printf("Go_D7");
-        break;
-    case Go_E7:
-        printf("Go_E7");
-        break;
-    case Go_F7:
-        printf("Go_F7");
-        break;
-    case Go_G7:
-        printf("Go_G7");
-        break;
-    case Go_H7:
-        printf("Go_H7");
-        break;
-    case Go_A8:
-        printf("Go_A8");
-        break;
-    case Go_B8:
-        printf("Go_B8");
-        break;
-    case Go_C8:
-        printf("Go_C8");
-        break;
-    case Go_D8:
-        printf("Go_D8");
-        break;
-    case Go_E8:
-        printf("Go_E8");
-        break;
-    case Go_F8:
-        printf("Go_F8");
-        break;
-    case Go_G8:
-        printf("Go_G8");
-        break;
-    case Go_H8:
-        printf("Go_H8");
-        break;
     }
 }
-
 //______________________________________________________________________________
 int Result(const State *const parent_state, const enum ACTIONS action, Transition_Model *const trans_model)
 {
