@@ -5,6 +5,7 @@
 #include "SpecificToProblem.c"
 #include "Standart_Search.c"
 #include "HashTable.c"
+#include <time.h>
 
 int main()
 {
@@ -13,6 +14,7 @@ int main()
     enum METHODS method;
     int Max_Level, level;
     float alpha;
+    clock_t start, end;
 
     // This part must be updated if a new algorithm is added.
     printf("1 --> Breast-First Search\n");
@@ -54,6 +56,8 @@ int main()
     {
         printf("======== SELECTION OF GOAL STATE =============== \n");
         goal_state = Create_State();
+        start = clock();
+        
     }
 
     if (method == GreedySearch || method == AStarSearch || method == GeneralizedAStarSearch)
@@ -96,6 +100,9 @@ int main()
     }
 
     Show_Solution_Path(goal);
+    end = clock();
+    double time_taken = ((double)(end - start)) / CLOCKS_PER_SEC;
+    printf("\n time taken: %f s\n", time_taken);
 
     return 0;
 }
