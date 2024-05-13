@@ -34,6 +34,11 @@ int main()
     {
         printf("Enter value of alpha for Generalized A* Search : ");
         scanf("%f", &alpha);
+        if (alpha < 0 || alpha > 1)
+        {
+            printf("ERROR: Alpha value must be between 0 and 1.\n");
+            exit(-1);
+        }
     }
 
     // Creating the root node ...
